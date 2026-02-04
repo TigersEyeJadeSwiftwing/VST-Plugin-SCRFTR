@@ -1,0 +1,3 @@
+LIBRARY C120
+EXPORTS main=VSTPluginMain
+VSTPluginMain

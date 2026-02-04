@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="C120" />
+		<Option pch_mode="2" />
+		<Option compiler="mingww32" />
+		<Build>
+			<Target title="Win32 NoSSE">
+				<Option output="..\bin\C120_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win32" />
+				<Option type="3" />
+				<Option compiler="mingww32" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW32" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_32.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx86_C120.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+			<Target title="Win64 NoSSE">
+				<Option output="..\bin\C120_64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win64" />
+				<Option type="3" />
+				<Option compiler="mingww64" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN64" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW64" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DVST_64BIT_PLATFORM" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_64.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx64_C120.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+			<Target title="Win32 SSE 2">
+				<Option output="..\bin\C120_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win32" />
+				<Option type="3" />
+				<Option compiler="mingww32" />
+				<Compiler>
+					<Add option="-msse2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m32" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW32" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+				</Compiler>
+				<Linker>
+					<Add option="-msse2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m32" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_32.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx86_C120_SSE2.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+			<Target title="Win64 SSE 2">
+				<Option output="..\bin\C120_64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win64" />
+				<Option type="3" />
+				<Option compiler="mingww64" />
+				<Compiler>
+					<Add option="-msse2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m64" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN64" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW64" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DVST_64BIT_PLATFORM" />
+				</Compiler>
+				<Linker>
+					<Add option="-msse2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m64" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_64.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx64_C120_SSE2.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+			<Target title="Win32 SSE 4.2">
+				<Option output="..\bin\C120_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win32" />
+				<Option type="3" />
+				<Option compiler="mingww32" />
+				<Compiler>
+					<Add option="-msse4.2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m32" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW32" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+				</Compiler>
+				<Linker>
+					<Add option="-msse4.2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m32" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_32.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx86_C120_SSE42.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+			<Target title="Win64 SSE 4.2">
+				<Option output="..\bin\C120_64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Win64" />
+				<Option type="3" />
+				<Option compiler="mingww64" />
+				<Compiler>
+					<Add option="-msse4.2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m64" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN64" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW64" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DVST_64BIT_PLATFORM" />
+				</Compiler>
+				<Linker>
+					<Add option="-msse4.2" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-m64" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+					<Add library="..\lib\libgraphics_64.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c move /y &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;../bin/SCx64_C120_SSE42.dll&quot;' />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O" />
+			<Add option="-trigraphs" />
+			<Add option="-m128bit-long-double" />
+			<Add option="-Wno-multichar" />
+			<Add option="-Wno-write-strings" />
+			<Add option="-Wno-pointer-arith" />
+			<Add option="-mwindows" />
+			<Add option="-ffinite-math-only" />
+			<Add option="-fno-signed-zeros" />
+			<Add option="-fno-trapping-math" />
+			<Add option="-ffast-math" />
+			<Add option="-DScC120_EXPORTS" />
+			<Add option="-DPlgEditor_EXPORTS" />
+			<Add directory="..\vstsdk" />
+			<Add directory="..\vstgui" />
+			<Add directory="..\vst_c120" />
+			<Add directory="..\vstsdk\pluginterfaces\vst2.x" />
+			<Add directory="..\vstsdk\public.sdk\source\vst2.x" />
+			<Add directory="..\common" />
+			<Add directory="..\lib_graphics_src" />
+			<Add directory="..\common\eq" />
+			<Add directory="..\common\dist" />
+		</Compiler>
+		<Linker>
+			<Add option="--def c120.def" />
+			<Add option="-trigraphs" />
+			<Add option="-m128bit-long-double" />
+			<Add option="-mwindows" />
+			<Add option="-ffinite-math-only" />
+			<Add option="-fno-signed-zeros" />
+			<Add option="-fno-trapping-math" />
+			<Add option="-ffast-math" />
+			<Add directory="..\lib" />
+		</Linker>
+		<Unit filename="..\common\custdata_types.cpp" />
+		<Unit filename="..\common\custdata_types.h" />
+		<Unit filename="..\common\dist\tube_bank_d.cpp" />
+		<Unit filename="..\common\dist\tube_bank_d.h" />
+		<Unit filename="..\common\eq\csts_eq.cpp" />
+		<Unit filename="..\common\eq\csts_eq.h" />
+		<Unit filename="..\common\eq\lp_btw.cpp" />
+		<Unit filename="..\common\eq\lp_btw.h" />
+		<Unit filename="..\common\eq\tonestack_d.cpp" />
+		<Unit filename="..\common\eq\tonestack_d.h" />
+		<Unit filename="..\common\eq\tstack_wav_c.h" />
+		<Unit filename="..\common\eq\wavs_amp\wav_cab_c.h" />
+		<Unit filename="..\common\eq\wavs_amp\wav_combo_g.h" />
+		<Unit filename="..\common\eq\wavs_amp\wav_head_g.h" />
+		<Unit filename="..\common\plugin_c120.cpp" />
+		<Unit filename="..\common\plugin_c120.h" />
+		<Unit filename="..\common\sample_bank_custom.cpp" />
+		<Unit filename="..\common\sample_bank_custom.h" />
+		<Unit filename="..\common\sc_parameters.h" />
+		<Unit filename="..\lib_graphics_src\crc32.h" />
+		<Unit filename="..\lib_graphics_src\deflate.h" />
+		<Unit filename="..\lib_graphics_src\gzguts.h" />
+		<Unit filename="..\lib_graphics_src\inffast.h" />
+		<Unit filename="..\lib_graphics_src\inffixed.h" />
+		<Unit filename="..\lib_graphics_src\inflate.h" />
+		<Unit filename="..\lib_graphics_src\inftrees.h" />
+		<Unit filename="..\lib_graphics_src\png.h" />
+		<Unit filename="..\lib_graphics_src\pngconf.h" />
+		<Unit filename="..\lib_graphics_src\pngpriv.h" />
+		<Unit filename="..\lib_graphics_src\trees.h" />
+		<Unit filename="..\lib_graphics_src\zconf.h" />
+		<Unit filename="..\lib_graphics_src\zlib.h" />
+		<Unit filename="..\lib_graphics_src\zutil.h" />
+		<Unit filename="c120.cpp" />
+		<Unit filename="c120.def" />
+		<Unit filename="c120.h" />
+		<Unit filename="c120.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="c120_gui.cpp" />
+		<Unit filename="c120_gui.h" />
+		<Unit filename="params.h" />
+		<Unit filename="..\vstgui\aeffguieditor.cpp" />
+		<Unit filename="..\vstgui\aeffguieditor.h" />
+		<Unit filename="..\vstgui\plugguieditor.cpp" />
+		<Unit filename="..\vstgui\plugguieditor.h" />
+		<Unit filename="..\vstgui\vstcontrols.cpp" />
+		<Unit filename="..\vstgui\vstcontrols.h" />
+		<Unit filename="..\vstgui\vstgui.cpp" />
+		<Unit filename="..\vstgui\vstgui.h" />
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\aeffect.h" />
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\aeffectx.h" />
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\vstfxstore.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\aeffeditor.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffect.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

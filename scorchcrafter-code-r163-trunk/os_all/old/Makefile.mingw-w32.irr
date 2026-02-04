@@ -1,0 +1,208 @@
+BIN = ./bin/SC_32b_C120.dll
+
+COMPILERPATH = C:/MinGW_w32
+COMPILERPREFIX = i686-w64-mingw32-
+COMPILERC = $(COMPILERPATH)/bin/$(COMPILERPREFIX)gcc
+COMPILERCPP = $(COMPILERPATH)/bin/$(COMPILERPREFIX)g++
+RESOURCETOOL = $(COMPILERPATH)/bin/$(COMPILERPREFIX)windres
+
+BUILDLOGPATH = ./build_logs/
+BLDLOGFILE = log.txt
+LGS = $(BUILDLOGPATH)$(BLDLOGFILE)
+ADDCFLAGS = -static-libgcc
+ADDCPPFLAGS = -static-libstdc++ -static-libgcc
+
+CFLAGS = -trigraphs -m128bit-long-double -Wno-multichar -Wno-write-strings -Wno-pointer-arith -mwindows \
+	-ffinite-math-only -fno-signed-zeros -fno-trapping-math -ffast-math
+
+BLDC = $(CFLAGS) $(ADDCFLAGS)
+BLDCPP = $(CFLAGS) $(ADDCPPFLAGS)
+
+CDEFS = -DScC120_EXPORTS -DPlgEditor_EXPORTS -DWINDOWS -D_WINDOWS -DWIN32 -D_USERDLL \
+	-D_USE_MATH_DEFINES -DCOMPILER_MGW32 -DUSE_LIBPNG=1 -DCRT_SECURE_NO_WARNINGS=1 \
+	-D_CRT_SECURE_NO_WARNINGS=1 -DCRT_SECURE_NO_DEPRECATE=1 -D_CRT_SECURE_NO_DEPRECATE=1 -DNDEBUG \
+	-DEXPORTS -DPNG_NO_MNG_FEATURES -DPNG_STATIC -DMINGW32 -D_MINGW32_ -D__MINGW32__ -DGNUC -D_GNUC_
+
+CINCLUDES = -I./ -I./sdk_vst -I./sdk_vstgui -I./vst_c120 -I./sdk_vst/pluginterfaces/vst2.x \
+	-I./sdk_vst/public.sdk/source/vst2.x -I./common -I./zlib -I./libpng -I./common/eq \
+	-I./common/dist -I./common/eq/wavs_amp
+
+CARCH = -m32 -mwindows
+
+OBJGRAPHICS = adler32.o compress.o crc32.o deflate.o gzclose.o gzlib.o gzread.o gzwrite.o \
+	infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o \
+	png.o pngerror.o pngget.o pngmem.o pngpread.o  pngread.o pngrio.o \
+	pngrtran.o pngrutil.o pngset.o pngtrans.o pngwio.o pngwrite.o pngwtran.o pngwutil.o
+
+OBJVSTSDK = audioeffect.o audioeffectx.o vstplugmain.o
+
+OBJVSTGUI = vstgui.o aeffguieditor.o plugguieditor.o vstcontrols.o
+
+OBJVSTC120 = custdata_types.o c120.o c120_gui.o plugin_c120.o sample_bank_custom.o csts_eq.o lp_btw.o \
+	tonestack_d.o tube_bank_d.o
+
+LIBS = -luuid -lshell32 -lole32 -lUser32 -ladvapi32
+
+ZLIBFLAGS = $(BLDC) $(CARCH) $(CDEFS) -DNO_VIZ
+ZLIBHEADERS = ./zlib/zlib.h ./zlib/zconf.h
+
+PNGFLAGS = $(ZLIBFLAGS)
+PNGHEADERS = $(ZLIBHEADERS)
+
+all:	clear-logs \
+	build-info \
+	graphicsrc \
+	cm-vstsdk \
+	cm-vstgui \
+	cm-c120-intfc \
+	cm-c120 \
+	lk-c120 \
+	clean-obj
+	@echo -e "\rAll Done! \r" >> $(LGS)
+	@echo -e "Built files are in the bin/ folder. " >> $(LGS)
+	@echo " "
+	@echo All Done!
+	@echo Built files are in the bin/ folder.
+
+graphicobj:
+	$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) $(SRCOBJGRAPHICS) -o gobj 
+
+graphicsrc:
+	@echo -e "Compiling... \r" >> $(LGS)
+	@echo Compiling...
+	@echo -e "zlib... \r" >> $(LGS)
+	@echo zlib...
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/adler32.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/compress.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/crc32.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/deflate.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzclose.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzlib.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzread.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzwrite.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/infback.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inffast.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inflate.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inftrees.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/trees.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/uncompr.c $(ZLIBHEADERS)>> $(LGS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/zutil.c $(ZLIBHEADERS)>> $(LGS)
+	@echo -e "libpng...\r" >> $(LGS)
+	@echo libpng...
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/png.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngerror.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngget.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngmem.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngset.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngpread.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngread.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngrio.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngrtran.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngrutil.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngtrans.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngwio.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngwrite.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngwtran.c $(PNGHEADERS)>> $(LGS)
+	@$(COMPILERC) $(PNGFLAGS) -O2 $(CINCLUDES) -c ./libpng/pngwutil.c $(PNGHEADERS)>> $(LGS)
+
+cm-vstsdk:
+	@echo -e "vst SDK, 2.4, r2... \r" >> $(LGS)
+	@echo vst SDK, 2.4, r2...
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/pluginterfaces/vst2.x/aeffect.h ./sdk_vst/public.sdk/source/vst2.x/audioeffect.cpp>> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/pluginterfaces/vst2.x/aeffectx.h ./sdk_vst/public.sdk/source/vst2.x/audioeffectx.cpp>> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/public.sdk/source/vst2.x/vstplugmain.cpp>> $(LGS)
+
+cm-vstgui:
+	@echo -e "vst GUI... \r" >> $(LGS)
+	@echo vst GUI...
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/vstgui.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/aeffguieditor.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/plugguieditor.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/vstcontrols.cpp >> $(LGS)
+
+cm-c120-intfc:
+	@echo -e "C120 VST Interface code \r" >> $(LGS)
+	@echo C120 VST Interface code
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./vst_c120/c120.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -I./common -c ./vst_c120/c120_gui.cpp >> $(LGS)
+
+cm-c120:
+	@echo -e "C120 VST Plugin, actual code \r">> $(LGS)
+	@echo C120 VST Plugin, actual code
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/custdata_types.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/plugin_c120.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/sample_bank_custom.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/csts_eq.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/lp_btw.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/tonestack_d.cpp >> $(LGS)
+	@$(COMPILERCPP) $(BLDCPP) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/dist/tube_bank_d.cpp >> $(LGS)
+
+lk-c120:
+	@echo -e "Creating Resource File... \r" >> $(LGS)
+	@echo Creating Resource File...
+	@$(RESOURCETOOL) -i ./vst_c120/c120.rc -J rc -o rc_c120.o -O coff >> $(LGS)
+	@echo -e "Linking C120 VST... \r" >> $(LGS)
+	@echo Linking C120 VST...
+	@$(COMPILERCPP) -shared -Wl,--dll $(LIBS) \
+	$(OBJGRAPHICS) $(OBJVSTGUI) $(OBJVSTSDK) $(OBJVSTC120) rc_c120.o \
+	-o $(BIN) --def ./vst_c120/c120.def $(CFLAGS) $(ADDCPPFLAGS) \
+	$(CARCH) $(CDEFS) $(LIBS) >> $(LGS)
+	@echo -e "Done! \r" >> $(LGS)
+	@echo Done!
+
+clean-obj:
+	@echo -e "Cleaning Up... \r" >> $(LGS)
+	@echo Cleaning Up...
+	@rm -rf *.o
+
+clean: clean-obj
+	@rm -rf rc_c120.0
+	@rm -rf $(BIN)
+
+clear-logs:
+	@echo -e Erasing Old Build Logs... \n
+	@rm -rf $(LGS)
+	@echo -e Saving build record to log file at $(LGS) \n
+
+build-info:
+	@echo -e "Compiler path is "$(COMPILERPATH) "\r" >> $(LGS)
+	@echo -e "Using \r" >> $(LGS)
+	@echo -e "  "$(COMPILERC) "\r" >> $(LGS)
+	@echo -e "  "$(COMPILERCPP) "\r" >> $(LGS)
+	@echo -e "  "$(RESOURCETOOL) "\r" >> $(LGS)
+	@echo -e "Target Archetecture switches are \r  "$(CARCH) "\r" >> $(LGS)
+	@echo -e Compiler path is $(COMPILERPATH) \n
+	@echo -e Using \n
+	@echo -e $(COMPILERC) \n
+	@echo -e $(COMPILERCPP) \n
+	@echo -e $(RESOURCETOOL) \n
+	@echo -e Target Archetecture switches are $(CARCH) \n
+
+help:
+	@echo "Some of the targets you can run MAKE with are:"
+	@echo "all: Build all plugins"
+	@echo "clean: Clean up files used for building stuff"
+	@echo "build-info: Display default build options and flags for this Makefile"
+	@echo ""
+	@echo "Build flags you might find useful:"
+	@echo "ADDCFLAGS - Additional gcc compile flags"
+	@echo "ADDCPPFLAGS - Additional g++ compile flags"
+	@echo "CARCH - gcc and g++ target archetecture switches"
+	@echo "COMPILERPATH - Path to your compiler"
+	@echo "COMPILERPREFIX - Used if your compiler's executables have additional"
+	@echo "    characters in their names (such as 'i686-mingw32-gcc' instead of 'gcc')"
+	@echo "COMPILERC - Default is 'gcc'"
+	@echo "COMPILERCPP - Default is 'g++'"
+	@echo "RESOURCETOOL - Default is 'windres'"
+	@echo ""
+	@echo "You're also welcome to poke around in the actual Makefile with a text editor,"
+	@echo "  If you think you know what you're doing."
+	@echo ""
+	@echo "Detected Compiler info:"
+	@$(COMPILERC) -v
+	@echo ""
+	@$(COMPILERCPP) -v
+	@echo ""

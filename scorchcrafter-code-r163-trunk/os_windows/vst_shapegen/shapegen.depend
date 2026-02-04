@@ -1,0 +1,362 @@
+# depslib dependency file v1.0
+1186377414 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\adler32.c
+	"zutil.h"
+
+1271615364 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\zutil.h
+	"zlib.h"
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	<alloc.h>
+	<malloc.h>
+	<malloc.h>
+	<unix.h>
+	<stdio.h>
+
+1271733168 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\zlib.h
+	"zconf.h"
+
+1271609886 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1134325651 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\compress.c
+	"zlib.h"
+
+1271646607 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\crc32.c
+	<stdio.h>
+	"zutil.h"
+	<limits.h>
+	"crc32.h"
+
+1041785614 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\crc32.h
+
+1271733141 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\deflate.c
+	"deflate.h"
+
+1271646046 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\deflate.h
+	"zutil.h"
+
+1266106368 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\gzclose.c
+	"gzguts.h"
+
+1271615312 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\gzguts.h
+	<stdio.h>
+	"zlib.h"
+	<string.h>
+	<stdlib.h>
+	<limits.h>
+	<fcntl.h>
+	<io.h>
+	<windows.h>
+	<errno.h>
+
+1271609602 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\gzlib.c
+	"gzguts.h"
+
+1269785973 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\gzread.c
+	"gzguts.h"
+
+1268447245 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\gzwrite.c
+	"gzguts.h"
+	<stdarg.h>
+
+1261787680 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\infback.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+	"inffixed.h"
+
+1271646926 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inftrees.h
+
+1261787528 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inflate.h
+
+1271646961 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inffast.h
+
+1038181498 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inffixed.h
+
+1271646983 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inffast.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+
+1264321635 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inflate.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+	"inffixed.h"
+	<stdio.h>
+
+1271733141 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\inftrees.c
+	"zutil.h"
+	"inftrees.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\png.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\png.h
+	"zlib.h"
+	"pngconf.h"
+
+1288366216 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngconf.h
+	<limits.h>
+	"config.h"
+	"pngusr.h"
+	<stdio.h>
+	<stdio.h>
+	<sys/types.h>
+	<setjmp.h>
+	<strings.h>
+	<string.h>
+	<time.h>
+	<dos.h>
+
+1288366216 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngpriv.h
+	<stdlib.h>
+	<fp.h>
+	<math.h>
+	<m68881.h>
+	<mem.h>
+	<alloc.h>
+	<windows.h>
+	<crtdbg.h>
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngerror.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngget.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngmem.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngpread.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngread.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngrio.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngrtran.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngrutil.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngset.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngtrans.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngwio.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngwrite.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngwtran.c
+	"png.h"
+	"pngpriv.h"
+
+1288366216 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\pngwutil.c
+	"png.h"
+	"pngpriv.h"
+
+1271646224 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\trees.c
+	"deflate.h"
+	<ctype.h>
+	"trees.h"
+	<stdio.h>
+
+1271608358 c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\trees.h
+
+1263749661 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\uncompr.c
+	"zlib.h"
+
+1271646853 source:c:\users\user\documents\sc_svn\trunk\os_windows\lib_include\zutil.c
+	"zutil.h"
+
+1289287523 source:c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\scorchc.rc
+
+1285377749 source:c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\scorchc_gui.cpp
+	"scorchc_gui.h"
+
+1288417904 c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\scorchc_gui.h
+	<zlib.h>
+	<zconf.h>
+	<pngconf.h>
+	<png.h>
+	<vstgui.h>
+	<aeffguieditor.h>
+	"params.h"
+	<vstcontrols.h>
+	"resource.h"
+	"scr_amp_head.h"
+
+1288473145 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstgui.h
+	<windows.h>
+	<objidl.h>
+	<gdiplus.h>
+	<Carbon/Carbon.h>
+	<malloc.h>
+	"vstcontrols.h"
+
+1199976636 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstcontrols.h
+	"vstgui.h"
+
+1199976636 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\aeffguieditor.h
+	"public.sdk/source/vst2.x/aeffeditor.h"
+	"audioeffectx.h"
+	"vstgui.h"
+
+1137418798 c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\aeffeditor.h
+	"audioeffectx.h"
+
+1150821926 c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffectx.h
+	"audioeffect.h"
+	"pluginterfaces/vst2.x/aeffectx.h"
+
+1149678288 c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffect.h
+	"pluginterfaces/vst2.x/aeffect.h"
+
+1150838576 c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\pluginterfaces\vst2.x\aeffect.h
+	<string.h>
+	<stdint.h>
+
+1150821924 c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\pluginterfaces\vst2.x\aeffectx.h
+	"aeffect.h"
+
+1285377749 c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\params.h
+
+1282911624 c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\resource.h
+
+1289790945 c:\users\user\documents\sc_svn\trunk\os_windows\vst_scorchcrafter\scr_amp_head.h
+	<audioeffectx.h>
+	"scorchc_gui.h"
+	"params.h"
+	"resource.h"
+	<cmath>
+
+1199976636 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\aeffguieditor.cpp
+	"aeffguieditor.h"
+	"audioeffectx.h"
+	<mach-o/dyld.h>
+	<mach-o/ldsyms.h>
+	<CoreFoundation/CFBundle.h>
+
+1199976636 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\plugguieditor.cpp
+	"plugguieditor.h"
+	<mach-o/dyld.h>
+	<mach-o/ldsyms.h>
+	<CoreFoundation/CFBundle.h>
+
+1199976636 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\plugguieditor.h
+	"vstgui.h"
+
+1199976636 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstcontrols.cpp
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"vstcontrols.h"
+	"vstkeycode.h"
+	<windows.h>
+
+1121332037 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstkeycode.h
+
+1288418053 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstgui.cpp
+	"vstgui.h"
+	"audioeffectx.h"
+	"aeffguieditor.h"
+	"vstkeycode.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"vstguidebug.h"
+	<list>
+	<typeinfo>
+	<windows.h>
+	<shlobj.h>
+	<shellapi.h>
+	<zmouse.h>
+	<commdlg.h>
+	"png.h"
+	<QuickTime/QuickTime.h>
+	<CoreServices/CoreServices.h>
+	<typeinfo>
+
+1199976636 c:\users\user\documents\sc_svn\trunk\os_windows\vstgui\vstguidebug.h
+	"vstgui.h"
+	<time.h>
+
+1149682922 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp
+	"audioeffect.h"
+	"aeffeditor.h"
+	<stddef.h>
+	<stdio.h>
+	<math.h>
+
+1160072640 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp
+	"audioeffectx.h"
+	"aeffeditor.h"
+
+1157464864 source:c:\users\user\documents\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp
+	"audioeffect.h"
+	<windows.h>
+
+1292261718 source:e:\sc_svn\trunk\os_windows\vst_shapegen\shapegen.rc
+
+1149682922 source:e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp
+	"audioeffect.h"
+	"aeffeditor.h"
+	<stddef.h>
+	<stdio.h>
+	<math.h>
+
+1149678288 e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffect.h
+	"pluginterfaces/vst2.x/aeffect.h"
+
+1150838576 e:\sc_svn\trunk\os_windows\vstsdk\pluginterfaces\vst2.x\aeffect.h
+	<string.h>
+	<stdint.h>
+
+1137418798 e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\aeffeditor.h
+	"audioeffectx.h"
+
+1150821926 e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffectx.h
+	"audioeffect.h"
+	"pluginterfaces/vst2.x/aeffectx.h"
+
+1150821924 e:\sc_svn\trunk\os_windows\vstsdk\pluginterfaces\vst2.x\aeffectx.h
+	"aeffect.h"
+
+1160072640 source:e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp
+	"audioeffectx.h"
+	"aeffeditor.h"
+
+1157464864 source:e:\sc_svn\trunk\os_windows\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp
+	"audioeffect.h"
+	<windows.h>
+

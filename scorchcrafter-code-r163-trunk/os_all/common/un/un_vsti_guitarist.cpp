@@ -1,0 +1,6 @@
+#include "../../common/custdata_types.cpp"
+#include "../../common/plugin_guitarist.cpp"
+#include "../../common/eq/csts_eq.cpp"
+#include "../../common/eq/lp_btw.cpp"
+#include "../../common/sample_bank_custom.cpp"
+#include "../../common/synth/gtr_string.cpp"

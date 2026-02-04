@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win64 SSE 4.2" />
+	<File name="..\lib_graphics_src\png.h" open="0" top="0" tabpos="0">
+		<Cursor position="61173" topLine="1372" />
+	</File>
+	<File name="..\shared\custdata_types.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="310" topLine="0" />
+	</File>
+	<File name="..\shared\custdata_types.h" open="0" top="0" tabpos="0">
+		<Cursor position="1037" topLine="0" />
+	</File>
+	<File name="..\shared\dist\tube_x_a.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="756" topLine="0" />
+	</File>
+	<File name="..\shared\dist\tube_x_a.h" open="0" top="0" tabpos="4">
+		<Cursor position="208" topLine="0" />
+	</File>
+	<File name="..\shared\eq\lp_bworth.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="2512" topLine="0" />
+	</File>
+	<File name="..\shared\eq\lp_bworth.h" open="0" top="0" tabpos="9">
+		<Cursor position="618" topLine="0" />
+	</File>
+	<File name="..\shared\eq\tonestack_a.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="646" topLine="0" />
+	</File>
+	<File name="..\shared\eq\tonestack_a.h" open="0" top="0" tabpos="8">
+		<Cursor position="823" topLine="0" />
+	</File>
+	<File name="..\shared\module_jyk.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="9773" topLine="0" />
+	</File>
+	<File name="..\shared\module_jyk.h" open="0" top="0" tabpos="2">
+		<Cursor position="212" topLine="0" />
+	</File>
+	<File name="..\shared\sample_bank.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="10973" topLine="0" />
+	</File>
+	<File name="..\shared\sample_bank.h" open="0" top="0" tabpos="6">
+		<Cursor position="395" topLine="0" />
+	</File>
+	<File name="jyk.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="19884" topLine="0" />
+	</File>
+	<File name="jyk.def" open="0" top="0" tabpos="1">
+		<Cursor position="12" topLine="0" />
+	</File>
+	<File name="jyk.h" open="0" top="0" tabpos="6">
+		<Cursor position="2002" topLine="24" />
+	</File>
+	<File name="jyk.rc" open="0" top="0" tabpos="2">
+		<Cursor position="791" topLine="0" />
+	</File>
+	<File name="jyk_config.h" open="0" top="0" tabpos="1">
+		<Cursor position="927" topLine="0" />
+	</File>
+	<File name="jyk_gui.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="4643" topLine="46" />
+	</File>
+	<File name="jyk_gui.h" open="0" top="0" tabpos="6">
+		<Cursor position="1001" topLine="0" />
+	</File>
+	<File name="params.h" open="0" top="0" tabpos="5">
+		<Cursor position="503" topLine="0" />
+	</File>
+	<File name="resource.h" open="0" top="0" tabpos="5">
+		<Cursor position="33" topLine="0" />
+	</File>
+	<File name="..\vstgui\vstgui.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="93627" topLine="3279" />
+	</File>
+	<File name="..\vstgui\vstgui.h" open="0" top="0" tabpos="0">
+		<Cursor position="2131" topLine="8" />
+	</File>
+</CodeBlocks_layout_file>

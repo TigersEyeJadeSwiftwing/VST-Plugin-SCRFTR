@@ -1,0 +1,51 @@
+#ifndef MAX_DIST_STAGES
+#define MAX_DIST_STAGES 10
+#endif
+
+#ifndef DIST_STAGES_CLEAN
+#define DIST_STAGES_CLEAN 2
+#endif
+
+#ifndef DIST_STAGES_CRUNCH
+#define DIST_STAGES_CRUNCH 4
+#endif
+
+#ifndef DIST_STAGES_HIGH
+#define DIST_STAGES_HIGH 8
+#endif
+
+#ifndef DIST_STAGES_MEGA
+#define DIST_STAGES_MEGA 10
+#endif
+
+#ifndef DIST_STAGES_CLEAN_RW
+#define DIST_STAGES_CLEAN_RW 1.50
+#endif
+
+#ifndef DIST_STAGES_CRUNCH_RW
+#define DIST_STAGES_CRUNCH_RW 0.750
+#endif
+
+#ifndef DIST_STAGES_HIGH_RW
+#define DIST_STAGES_HIGH_RW 0.950
+#endif
+
+#ifndef DIST_STAGES_MEGA_RW
+#define DIST_STAGES_MEGA_RW 0.50
+#endif
+
+#ifndef DIST_STAGES_CLEAN_RF
+#define DIST_STAGES_CLEAN_RF 0.1250
+#endif
+
+#ifndef DIST_STAGES_CRUNCH_RF
+#define DIST_STAGES_CRUNCH_RF 0.250
+#endif
+
+#ifndef DIST_STAGES_HIGH_RF
+#define DIST_STAGES_HIGH_RF 0.30
+#endif
+
+#ifndef DIST_STAGES_MEGA_RF
+#define DIST_STAGES_MEGA_RF 0.20
+#endif

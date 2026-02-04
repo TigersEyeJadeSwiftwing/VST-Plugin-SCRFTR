@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="MinGW_CodeBlocks">
+		<Project filename="vst_scorchcrafter/scorchcrafter.cbp" />
+		<Project filename="vst_shapewriter/shapewriter.cbp" />
+		<Project filename="vst_shapegen/shapegen.cbp" />
+		<Project filename="utility_shapetool/ShapeTool.cbp" />
+		<Project filename="lib_graphics_src/build/graphics_lib.cbp" />
+		<Project filename="vst_jykwrakker/jyk.cbp" />
+		<Project filename="vst_c120/c120.cbp" active="1" />
+		<Project filename="vst_quick_cab/qcab.cbp" />
+		<Project filename="bin2c/bin2c.cbp" />
+		<Project filename="vst_suite/suite.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Suite Plug-in" />
+		<Option execution_dir="E:\0-files\scorchcrafter\" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win-VST-w32">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<ExtraCommands>
+					<Add before="$(MAKEPROG) vst-w32" />
+				</ExtraCommands>
+			</Target>
+			<Environment>
+				<Variable name="MAKEPROG" value="C:\MinGW\bin\mingw32-make.exe" />
+			</Environment>
+		</Build>
+		<Unit filename="Makefile">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common_c\cabmic\cab_a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\cabmic\cab_a.h" />
+		<Unit filename="common_c\components.h" />
+		<Unit filename="common_c\components\eq_filter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\components\eq_filter.h" />
+		<Unit filename="common_c\components\eq_tube.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\components\eq_tube.h" />
+		<Unit filename="common_c\components\tube_alpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\components\tube_alpha.h" />
+		<Unit filename="common_c\custom_types.h" />
+		<Unit filename="common_c\eq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\eq.h" />
+		<Unit filename="common_c\fx.h" />
+		<Unit filename="common_c\heads.h" />
+		<Unit filename="common_c\heads_bass\glz60.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\heads_bass\glz60.h" />
+		<Unit filename="common_c\heads_guitar\c120.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\heads_guitar\c120.h" />
+		<Unit filename="common_c\heads_guitar\jyk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\heads_guitar\jyk.h" />
+		<Unit filename="common_c\os_bank.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\os_bank.h" />
+		<Unit filename="common_c\slot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\slot.h" />
+		<Unit filename="common_c\slot_defs.h" />
+		<Unit filename="common_c\un_vst_suite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\vst_c_suite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common_c\vst_c_suite.h" />
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\aeffect.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\aeffectx.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\vstfxstore.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\aeffeditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffect.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffect.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffectx.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffectx.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\vstplugmain.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\aeffguieditor.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\aeffguieditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cdatabrowser.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cdatabrowser.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cfileselector.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cfileselector.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cscrollview.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cscrollview.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctabview.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctabview.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctooltipsupport.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctooltipsupport.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cvstguitimer.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cvstguitimer.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\plugguieditor.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\plugguieditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstcontrols.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstcontrols.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstgui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstguidebug.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstguidebug.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstkeycode.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_suite\params_vst_suite.h" />
+		<Unit filename="vst_suite\suite.cpp" />
+		<Unit filename="vst_suite\suite.def" />
+		<Unit filename="vst_suite\suite.h" />
+		<Unit filename="vst_suite\suite.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="vst_suite\suite_gui.cpp" />
+		<Unit filename="vst_suite\suite_gui.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

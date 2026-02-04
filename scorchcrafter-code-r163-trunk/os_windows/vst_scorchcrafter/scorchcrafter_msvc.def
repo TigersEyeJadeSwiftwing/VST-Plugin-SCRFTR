@@ -1,0 +1,3 @@
+LIBRARY ScorchCrafter_MSVC
+EXPORTS main=VSTPluginMain
+VSTPluginMain

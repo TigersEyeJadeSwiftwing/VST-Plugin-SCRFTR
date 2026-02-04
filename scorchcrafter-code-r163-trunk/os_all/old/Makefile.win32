@@ -1,0 +1,137 @@
+BIN = ./bin/SC_32b_C120.dll
+
+COMPILERPATH = C:/MinGW
+COMPILERPREFIX =
+COMPILERC = $(COMPILERPATH)/bin/$(COMPILERPREFIX)gcc
+COMPILERCPP = $(COMPILERPATH)/bin/$(COMPILERPREFIX)g++
+RESOURCETOOL = $(COMPILERPATH)/bin/$(COMPILERPREFIX)windres
+
+CFLAGS = -trigraphs -m128bit-long-double -Wno-multichar -Wno-write-strings -Wno-pointer-arith -mwindows \
+	-ffinite-math-only -fno-signed-zeros -fno-trapping-math -ffast-math \
+	-static-libgcc
+
+CDEFS = -DScC120_EXPORTS -DPlgEditor_EXPORTS -DWINDOWS -D_WINDOWS -DWIN32 -D_USERDLL \
+	-D_USE_MATH_DEFINES -DCOMPILER_MGW32 -DUSE_LIBPNG=1 -DCRT_SECURE_NO_WARNINGS=1 \
+	-D_CRT_SECURE_NO_WARNINGS=1 -DCRT_SECURE_NO_DEPRECATE=1 -D_CRT_SECURE_NO_DEPRECATE=1 -DNDEBUG \
+	-DEXPORTS -DPNG_NO_MNG_FEATURES -DPNG_STATIC -DMINGW32 -D_MINGW32_ -D__MINGW32__ -DGNUC -D_GNUC_
+
+CINCLUDES = -I./ -I./sdk_vst -I./sdk_vstgui -I./vst_c120 -I./sdk_vst/pluginterfaces/vst2.x \
+	-I./sdk_vst/public.sdk/source/vst2.x -I./common -I./zlib -I./libpng -I./common/eq \
+	-I./common/dist -I./common/eq/wavs_amp
+CARCH = -m32 -mwindows
+
+OBJGRAPHICS = adler32.o compress.o crc32.o deflate.o gzclose.o gzlib.o gzread.o gzwrite.o \
+	infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o \
+	png.o pngerror.o pngget.o pngmem.o pngpread.o  pngread.o pngrio.o \
+	pngrtran.o pngrutil.o pngset.o pngtrans.o pngwio.o pngwrite.o pngwtran.o pngwutil.o
+
+OBJVSTSDK = audioeffect.o audioeffectx.o vstplugmain.o
+
+OBJVSTGUI = vstgui.o aeffguieditor.o plugguieditor.o vstcontrols.o
+
+OBJVSTC120 = custdata_types.o c120.o c120_gui.o plugin_c120.o sample_bank_custom.o csts_eq.o lp_btw.o \
+	tonestack_d.o tube_bank_d.o
+
+LIBS = -luuid -lshell32 -lole32 -lUser32 -ladvapi32
+
+ZLIBFLAGS = $(CFLAGS) $(CARCH) $(CDEFS) -DNO_VIZ
+ZLIBHEADERS = ./zlib/zlib.h ./zlib/zconf.h
+
+all:	graphicsrc \
+	cm-vstsdk \
+	cm-vstgui \
+	cm-c120-intfc \
+	cm-c120 \
+	lk-c120 \
+	clean-obj
+
+graphicobj:
+	$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) $(SRCOBJGRAPHICS) -o gobj 
+
+graphicsrc:
+	@echo Compiling...
+	@echo zlib...
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/adler32.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/compress.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/crc32.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/deflate.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzclose.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzlib.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzread.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/gzwrite.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/infback.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inffast.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inflate.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/inftrees.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/trees.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/uncompr.c $(ZLIBHEADERS)
+	@$(COMPILERC) $(ZLIBFLAGS) -O3 -w $(CINCLUDES) -c ./zlib/zutil.c $(ZLIBHEADERS)
+	@echo libpng...
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/png.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngerror.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngget.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngmem.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngset.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngpread.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngread.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngrio.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngrtran.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngrutil.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngtrans.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngwio.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngwrite.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngwtran.c
+	@$(COMPILERC) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./libpng/pngwutil.c
+
+cm-vstsdk:
+	@echo vst SDK, 2.4, r2...
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/pluginterfaces/vst2.x/aeffect.h ./sdk_vst/public.sdk/source/vst2.x/audioeffect.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/pluginterfaces/vst2.x/aeffectx.h ./sdk_vst/public.sdk/source/vst2.x/audioeffectx.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) \
+	-c ./sdk_vst/public.sdk/source/vst2.x/vstplugmain.cpp
+
+cm-vstgui:
+	@echo vst GUI...
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/vstgui.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/aeffguieditor.cpp
+#	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/ctooltipsupport.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/plugguieditor.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./sdk_vstgui/vstcontrols.cpp
+
+cm-c120-intfc:
+	@echo C120 VST Interface code
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -c ./vst_c120/c120.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O2 $(CINCLUDES) -I./common -c ./vst_c120/c120_gui.cpp
+
+cm-c120:
+	@echo C120 VST Plugin, actual code
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/custdata_types.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/plugin_c120.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/sample_bank_custom.cpp
+#	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/sample_bank_fp.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/csts_eq.cpp;
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/lp_btw.cpp
+#	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/lp_bworth.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/eq/tonestack_d.cpp
+	@$(COMPILERCPP) $(CFLAGS) $(CARCH) $(CDEFS) -O1 $(CINCLUDES) -c ./common/dist/tube_bank_d.cpp
+
+lk-c120:
+	@echo Creating Resource File...
+	@$(RESOURCETOOL) -i ./vst_c120/c120.rc -J rc -o rc_c120.o -O coff
+	@echo Linking C120 VST...
+	@$(COMPILERCPP) -shared -Wl,--dll $(LIBS) \
+	$(OBJGRAPHICS) $(OBJVSTGUI) $(OBJVSTSDK) $(OBJVSTC120) rc_c120.o \
+	-o $(BIN) --def ./vst_c120/c120.def $(CFLAGS) -static-libstdc++ -static-libgcc \
+	$(CARCH) $(CDEFS) $(LIBS)
+	@echo Done!
+
+clean-obj:
+	@echo Cleaning Up...
+	@rm -rf *.o
+
+clean: clean-obj
+	@rm -rf rc_c120.0
+	@rm -rf $(BIN)
+

@@ -1,0 +1,87 @@
+These notes are for those who wish to re-build or re-compile the plug-ins with MinGW, but don't want to (or can't) use the Code::Blocks IDE software.
+
+In this file you will find the compiler and linker options and commands used to build the plug-ins as they are.
+This text file also briefly touches on what pre-processor DEFINEs can be passed to the compiler to make the source code build in special ways.
+
+Please note that this text doesn't cover building the plug-ins via MSVC compilers of any kind, only MinGW and MinGW-64.  (No offense to MSVC users, although
+if you use MS compilers and want to contribute to the project by maintaining MS project files, by all means introduce yourself in the official forum with your offer.)
+
+NOTE from Destructavator (primary "coder" at the moment):  I realize that much of my source code that I've written may seem elementary, and also that some of the compiler
+options I use might not be the absolute best choices, but please understand that I'm not a programmer who also plays guitar, no, but I'm really a musician and guitar player
+first who does a little programming on the side, and is self-taught as well in coding.  (I've never sat in any C/C++ class before, not even a beginner-level one.)
+So, if you're staring at my childish-looking code and scratching your head with a "WTF" mentality wondering why I did something the way I did, that's why.
+
+Please also note that up until very recently I was using Twilight Dragon Media versions of MinGW, just recently I've switched to the OFFICIAL 4.5.2 MinGW and MinGW-64
+compilers.
+
+------------------------
+
+Regarding "custdata_types.h": ("Custom Data Types Source Header")
+
+Nearly all of the plug-ins use this header.  It checks for preprocessor DEFINE options when compiling, to decide how to build the plug-ins, and then what data types
+to assign via TYPEDEFs to various data type names.
+
+The names that are used for declaring variables elsewhere in the code are as follows:
+
+fhx == long double (always) (set to full 128-bits with compiler options)
+fsx == double (always)
+flx == float (always)
+
+f9x == float OR double OR long double (depends on preprocessor DEFINEs when compiling)*
+
+u9x == unsigned long long
+s9x == signed long long
+u7x == unsigned short
+s7x == signed short
+
+*The available options when compiling are to define ONE of the following:
+
+PRECISION_LOW		// Makes (f9x) equal to (float)
+PRECISION_NORMAL	// Makes (f9x) equal to (double)
+PRECISION_HIGH		// Makes (f9x) equal to (long double)
+
+If none of the PRECISION values are given, the code will *assume* PRECISION_NORMAL and make (f9x) equal to a (double).
+
+-----------------------
+
+Plug-in compiler options that I use:
+
+-static-libgcc
+
+-trigraphs		// Needed for the VSTGUI SDK to build properly without errors
+-m128bit-long-double
+-msse4.2		// Used only for SSE 4.2 builds
+-m64			// Used only when building 64-bit DLLs
+-ffinite-math-only
+-fno-signed-zeros
+-fno-trapping-math
+-mfpmath=sse		// Only when building with SSE
+-malign-double
+
+-----------------------
+
+Linker options I use:
+
+-static-libstdc++
+-static-libgcc
+
+-m128bit-long-double
+-msse4.2		// Used only for SSE 4.2 builds
+-m64			// Used only when building 64-bit DLLs
+-ffinite-math-only
+-fno-signed-zeros
+-fno-trapping-math
+-mfpmath=sse		// Only when building with SSE
+-malign-double
+
+Linked libraries:
+
+uuid
+shell32
+obe32
+User32
+advapi32
+libgraphics_32 OR libgraphics_64	// Custom-built static library with ZLIB and LIBPNG for plug-in GUIs
+
+-----------------------
+

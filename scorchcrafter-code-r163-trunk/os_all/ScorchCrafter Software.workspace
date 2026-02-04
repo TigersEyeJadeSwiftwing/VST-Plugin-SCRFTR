@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="ScorchCrafter Software">
+		<Project filename="scorchcrafter.cbp" active="1" />
+		<Project filename="suite.cbp" />
+		<Project filename="fir_data_converter/FIR_Data_Converter.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

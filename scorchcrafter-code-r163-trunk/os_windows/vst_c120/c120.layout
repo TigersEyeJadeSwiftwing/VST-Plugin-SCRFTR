@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win64 NoSSE" />
+	<File name="..\common\custdata_types.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="358" topLine="0" />
+	</File>
+	<File name="..\common\custdata_types.h" open="0" top="0" tabpos="12">
+		<Cursor position="237" topLine="10" />
+	</File>
+	<File name="..\common\dist\tube_bank_d.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="6466" topLine="200" />
+	</File>
+	<File name="..\common\dist\tube_bank_d.h" open="0" top="0" tabpos="3">
+		<Cursor position="1560" topLine="24" />
+	</File>
+	<File name="..\common\eq\csts_eq.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="3354" topLine="69" />
+	</File>
+	<File name="..\common\eq\csts_eq.h" open="0" top="0" tabpos="16">
+		<Cursor position="632" topLine="0" />
+	</File>
+	<File name="..\common\eq\lp_btw.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="1351" topLine="27" />
+	</File>
+	<File name="..\common\eq\lp_btw.h" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\common\eq\tonestack_d.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="12169" topLine="469" />
+	</File>
+	<File name="..\common\eq\tonestack_d.h" open="0" top="0" tabpos="6">
+		<Cursor position="236" topLine="0" />
+	</File>
+	<File name="..\common\eq\tstack_wav_c.h" open="0" top="0" tabpos="11">
+		<Cursor position="88" topLine="0" />
+	</File>
+	<File name="..\common\eq\wavs_amp\wav_cab_c.h" open="0" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\common\plugin_c120.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="2071" topLine="467" />
+	</File>
+	<File name="..\common\plugin_c120.h" open="0" top="0" tabpos="1">
+		<Cursor position="4370" topLine="33" />
+	</File>
+	<File name="..\common\sample_bank_custom.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1604" topLine="12" />
+	</File>
+	<File name="..\common\sample_bank_custom.h" open="0" top="0" tabpos="10">
+		<Cursor position="108" topLine="0" />
+	</File>
+	<File name="..\common\sc_parameters.h" open="0" top="0" tabpos="2">
+		<Cursor position="1699" topLine="0" />
+	</File>
+	<File name="c120.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="2393" topLine="192" />
+	</File>
+	<File name="c120.def" open="0" top="0" tabpos="0">
+		<Cursor position="57" topLine="0" />
+	</File>
+	<File name="c120.h" open="0" top="0" tabpos="8">
+		<Cursor position="1350" topLine="40" />
+	</File>
+	<File name="c120.rc" open="0" top="0" tabpos="1">
+		<Cursor position="1150" topLine="0" />
+	</File>
+	<File name="c120_gui.cpp" open="0" top="0" tabpos="15">
+		<Cursor position="1432" topLine="0" />
+	</File>
+	<File name="c120_gui.h" open="0" top="0" tabpos="17">
+		<Cursor position="957" topLine="0" />
+	</File>
+	<File name="params.h" open="0" top="0" tabpos="9">
+		<Cursor position="131" topLine="0" />
+	</File>
+	<File name="..\vstgui\aeffguieditor.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6694" topLine="198" />
+	</File>
+	<File name="..\vstgui\aeffguieditor.h" open="0" top="0" tabpos="0">
+		<Cursor position="4043" topLine="61" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\aeffect.h" open="0" top="0" tabpos="0">
+		<Cursor position="3813" topLine="300" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\aeffectx.h" open="0" top="0" tabpos="0">
+		<Cursor position="887" topLine="0" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\vstfxstore.h" open="0" top="0" tabpos="0">
+		<Cursor position="1130" topLine="55" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffect.h" open="0" top="0" tabpos="0">
+		<Cursor position="1719" topLine="114" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.h" open="0" top="0" tabpos="0">
+		<Cursor position="2253" topLine="201" />
+	</File>
+</CodeBlocks_layout_file>

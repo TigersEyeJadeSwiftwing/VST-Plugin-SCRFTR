@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win64 MinGW" />
+	<File name="..\shared\custdata_types.h" open="0" top="0" tabpos="4">
+		<Cursor position="525" topLine="0" />
+	</File>
+	<File name="params.h" open="0" top="0" tabpos="3">
+		<Cursor position="91" topLine="0" />
+	</File>
+	<File name="shapegen.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="11490" topLine="124" />
+	</File>
+	<File name="shapegen.def" open="0" top="0" tabpos="0">
+		<Cursor position="16" topLine="0" />
+	</File>
+	<File name="shapegen.h" open="0" top="0" tabpos="1">
+		<Cursor position="1589" topLine="0" />
+	</File>
+	<File name="shapegen.rc" open="0" top="0" tabpos="0">
+		<Cursor position="1329" topLine="0" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\aeffect.h" open="0" top="0" tabpos="0">
+		<Cursor position="3321" topLine="83" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="10236" topLine="247" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="33642" topLine="908" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.h" open="0" top="0" tabpos="0">
+		<Cursor position="11338" topLine="148" />
+	</File>
+</CodeBlocks_layout_file>

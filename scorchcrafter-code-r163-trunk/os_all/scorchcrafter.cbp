@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Single Plug-ins" />
+		<Option execution_dir="E:\0-files\scorchcrafter\" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win-VST-w32">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<ExtraCommands>
+					<Add before="$(MAKEPROG) vst-w32" />
+				</ExtraCommands>
+			</Target>
+			<Environment>
+				<Variable name="MAKEPROG" value="C:\MinGW\bin\mingw32-make.exe" />
+			</Environment>
+		</Build>
+		<Unit filename="Makefile">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\bin2c.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\c120_gui_graphics.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\c120_irrgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\c120_irrgui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\controller\controller_c120.cpp" />
+		<Unit filename="common\controller\controller_c120.h" />
+		<Unit filename="common\custdata_types.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\custdata_types.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\diode - Copy.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\diode.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\diode_s.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_a.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_b.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_c.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_d.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_e.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_f.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_bank_g.cpp" />
+		<Unit filename="common\dist\tube_bank_g.h" />
+		<Unit filename="common\dist\tube_bank_h.cpp" />
+		<Unit filename="common\dist\tube_bank_h.h" />
+		<Unit filename="common\dist\tube_bank_i.cpp" />
+		<Unit filename="common\dist\tube_bank_i.h" />
+		<Unit filename="common\dist\tube_bank_j.cpp" />
+		<Unit filename="common\dist\tube_bank_j.h" />
+		<Unit filename="common\dist\tube_params.h" />
+		<Unit filename="common\dist\tube_stage.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_x_b.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\dist\tube_x_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\csts_eq.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\csts_eq.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\fir_eq.cpp" />
+		<Unit filename="common\eq\fir_eq.h" />
+		<Unit filename="common\eq\impulse_eq.cpp" />
+		<Unit filename="common\eq\impulse_eq.h" />
+		<Unit filename="common\eq\lp_btw.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\lp_btw.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\lp_bworth.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\lp_bworth.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_a.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_b.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_c.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_d.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_e.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_f.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_g.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_g.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tonestack_h.cpp" />
+		<Unit filename="common\eq\tonestack_h.h" />
+		<Unit filename="common\eq\tonestack_i.cpp" />
+		<Unit filename="common\eq\tonestack_i.h" />
+		<Unit filename="common\eq\tonestack_j.cpp" />
+		<Unit filename="common\eq\tonestack_j.h" />
+		<Unit filename="common\eq\tonestack_k.cpp" />
+		<Unit filename="common\eq\tonestack_k.h" />
+		<Unit filename="common\eq\tstack_params.h" />
+		<Unit filename="common\eq\tstack_wav_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tstack_wav_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\tstack_wav_i.h" />
+		<Unit filename="common\eq\tstack_wav_j.h" />
+		<Unit filename="common\eq\tstack_wavs.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_hardness.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_head_a_iii_hi.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_head_a_iii_low.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_head_a_iv_hi.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_head_a_iv_low.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\amp_head_a_v.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_aa.h" />
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_c120_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_cab_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_combo_g.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_a.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_aa.h" />
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_ab.h" />
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_ac.h" />
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_b.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_c.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_d.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_c120_g.h" />
+		<Unit filename="common\eq\wavs_amp\wav_head_e.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_f.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\eq\wavs_amp\wav_head_g.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\impulse\cabmic_a.cpp" />
+		<Unit filename="common\impulse\cabmic_a.h" />
+		<Unit filename="common\impulse\imp_wavs_a.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_a.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_b.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_aa.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_b.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_c.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_d.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_e.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_c120_f.h" />
+		<Unit filename="common\impulse\wavs_data\wav_cab_d.h" />
+		<Unit filename="common\irr_gui\windows_gui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\irr_gui\windows_gui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\irr_linux\c120_irrgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\irr_linux\c120_irrgui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\irr_win\c120_irrgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\irr_win\c120_irrgui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin\backup_eq_tones.h" />
+		<Unit filename="common\plugin\defines_c120.h" />
+		<Unit filename="common\plugin\defines_jykkr.h" />
+		<Unit filename="common\plugin\eq_cabs_guitar_a.h" />
+		<Unit filename="common\plugin\tone_c120.h" />
+		<Unit filename="common\plugin_c120.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_c120.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_drummer.cpp" />
+		<Unit filename="common\plugin_drummer.h" />
+		<Unit filename="common\plugin_glz60.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_glz60.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_guitarist.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_guitarist.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_jykkr.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\plugin_jykkr.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\sample_bank_custom.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\sample_bank_custom.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\sample_bank_custom_b.cpp" />
+		<Unit filename="common\sample_bank_custom_b.h" />
+		<Unit filename="common\sample_bank_fp.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\sample_bank_fp.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\sc_parameters.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\synth\drums\drum_snare.h" />
+		<Unit filename="common\synth\drumset_snare.cpp" />
+		<Unit filename="common\synth\drumset_snare.h" />
+		<Unit filename="common\synth\gtr_string.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\synth\gtr_string.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\synth\gtr_strings\string_gibson_xplr_emg.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\synth\gtr_strings\string_ibanez_rg_evo.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_lib_libpng.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_lib_zlib.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_sdk_vst.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_sdk_vstgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_sdk_vstgui4.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_vst_c120.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_vst_glz60.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_vst_jykkr.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="common\un\un_vsti_drummer.cpp" />
+		<Unit filename="common\un\un_vsti_guitarist.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include\lib_c120.h" />
+		<Unit filename="include\scorchcraft.h" />
+		<Unit filename="include_irr\CDynamicMeshBuffer.h" />
+		<Unit filename="include_irr\CIndexBuffer.h" />
+		<Unit filename="include_irr\CMeshBuffer.h" />
+		<Unit filename="include_irr\CVertexBuffer.h" />
+		<Unit filename="include_irr\EAttributes.h" />
+		<Unit filename="include_irr\ECullingTypes.h" />
+		<Unit filename="include_irr\EDebugSceneTypes.h" />
+		<Unit filename="include_irr\EDeviceTypes.h" />
+		<Unit filename="include_irr\EDriverFeatures.h" />
+		<Unit filename="include_irr\EDriverTypes.h" />
+		<Unit filename="include_irr\EGUIAlignment.h" />
+		<Unit filename="include_irr\EGUIElementTypes.h" />
+		<Unit filename="include_irr\EHardwareBufferFlags.h" />
+		<Unit filename="include_irr\EMaterialFlags.h" />
+		<Unit filename="include_irr\EMaterialTypes.h" />
+		<Unit filename="include_irr\EMeshWriterEnums.h" />
+		<Unit filename="include_irr\EMessageBoxFlags.h" />
+		<Unit filename="include_irr\EPrimitiveTypes.h" />
+		<Unit filename="include_irr\ESceneNodeAnimatorTypes.h" />
+		<Unit filename="include_irr\ESceneNodeTypes.h" />
+		<Unit filename="include_irr\EShaderTypes.h" />
+		<Unit filename="include_irr\ETerrainElements.h" />
+		<Unit filename="include_irr\IAnimatedMesh.h" />
+		<Unit filename="include_irr\IAnimatedMeshMD2.h" />
+		<Unit filename="include_irr\IAnimatedMeshMD3.h" />
+		<Unit filename="include_irr\IAnimatedMeshSceneNode.h" />
+		<Unit filename="include_irr\IAttributeExchangingObject.h" />
+		<Unit filename="include_irr\IAttributes.h" />
+		<Unit filename="include_irr\IBillboardSceneNode.h" />
+		<Unit filename="include_irr\IBillboardTextSceneNode.h" />
+		<Unit filename="include_irr\IBoneSceneNode.h" />
+		<Unit filename="include_irr\ICameraSceneNode.h" />
+		<Unit filename="include_irr\ICursorControl.h" />
+		<Unit filename="include_irr\IDummyTransformationSceneNode.h" />
+		<Unit filename="include_irr\IDynamicMeshBuffer.h" />
+		<Unit filename="include_irr\IEventReceiver.h" />
+		<Unit filename="include_irr\IFileArchive.h" />
+		<Unit filename="include_irr\IFileList.h" />
+		<Unit filename="include_irr\IFileSystem.h" />
+		<Unit filename="include_irr\IGPUProgrammingServices.h" />
+		<Unit filename="include_irr\IGUIButton.h" />
+		<Unit filename="include_irr\IGUICheckBox.h" />
+		<Unit filename="include_irr\IGUIColorSelectDialog.h" />
+		<Unit filename="include_irr\IGUIComboBox.h" />
+		<Unit filename="include_irr\IGUIContextMenu.h" />
+		<Unit filename="include_irr\IGUIEditBox.h" />
+		<Unit filename="include_irr\IGUIElement.h" />
+		<Unit filename="include_irr\IGUIElementFactory.h" />
+		<Unit filename="include_irr\IGUIEnvironment.h" />
+		<Unit filename="include_irr\IGUIFileOpenDialog.h" />
+		<Unit filename="include_irr\IGUIFont.h" />
+		<Unit filename="include_irr\IGUIFontBitmap.h" />
+		<Unit filename="include_irr\IGUIImage.h" />
+		<Unit filename="include_irr\IGUIImageList.h" />
+		<Unit filename="include_irr\IGUIInOutFader.h" />
+		<Unit filename="include_irr\IGUIListBox.h" />
+		<Unit filename="include_irr\IGUIMeshViewer.h" />
+		<Unit filename="include_irr\IGUIScrollBar.h" />
+		<Unit filename="include_irr\IGUISkin.h" />
+		<Unit filename="include_irr\IGUISpinBox.h" />
+		<Unit filename="include_irr\IGUISpriteBank.h" />
+		<Unit filename="include_irr\IGUIStaticText.h" />
+		<Unit filename="include_irr\IGUITabControl.h" />
+		<Unit filename="include_irr\IGUITable.h" />
+		<Unit filename="include_irr\IGUIToolbar.h" />
+		<Unit filename="include_irr\IGUITreeView.h" />
+		<Unit filename="include_irr\IGUIWindow.h" />
+		<Unit filename="include_irr\IGeometryCreator.h" />
+		<Unit filename="include_irr\IImage.h" />
+		<Unit filename="include_irr\IImageLoader.h" />
+		<Unit filename="include_irr\IImageWriter.h" />
+		<Unit filename="include_irr\IIndexBuffer.h" />
+		<Unit filename="include_irr\ILightManager.h" />
+		<Unit filename="include_irr\ILightSceneNode.h" />
+		<Unit filename="include_irr\ILogger.h" />
+		<Unit filename="include_irr\IMaterialRenderer.h" />
+		<Unit filename="include_irr\IMaterialRendererServices.h" />
+		<Unit filename="include_irr\IMesh.h" />
+		<Unit filename="include_irr\IMeshBuffer.h" />
+		<Unit filename="include_irr\IMeshCache.h" />
+		<Unit filename="include_irr\IMeshLoader.h" />
+		<Unit filename="include_irr\IMeshManipulator.h" />
+		<Unit filename="include_irr\IMeshSceneNode.h" />
+		<Unit filename="include_irr\IMeshWriter.h" />
+		<Unit filename="include_irr\IMetaTriangleSelector.h" />
+		<Unit filename="include_irr\IOSOperator.h" />
+		<Unit filename="include_irr\IParticleAffector.h" />
+		<Unit filename="include_irr\IParticleAnimatedMeshSceneNodeEmitter.h" />
+		<Unit filename="include_irr\IParticleAttractionAffector.h" />
+		<Unit filename="include_irr\IParticleBoxEmitter.h" />
+		<Unit filename="include_irr\IParticleCylinderEmitter.h" />
+		<Unit filename="include_irr\IParticleEmitter.h" />
+		<Unit filename="include_irr\IParticleFadeOutAffector.h" />
+		<Unit filename="include_irr\IParticleGravityAffector.h" />
+		<Unit filename="include_irr\IParticleMeshEmitter.h" />
+		<Unit filename="include_irr\IParticleRingEmitter.h" />
+		<Unit filename="include_irr\IParticleRotationAffector.h" />
+		<Unit filename="include_irr\IParticleSphereEmitter.h" />
+		<Unit filename="include_irr\IParticleSystemSceneNode.h" />
+		<Unit filename="include_irr\IQ3LevelMesh.h" />
+		<Unit filename="include_irr\IQ3Shader.h" />
+		<Unit filename="include_irr\IReadFile.h" />
+		<Unit filename="include_irr\IReferenceCounted.h" />
+		<Unit filename="include_irr\ISceneCollisionManager.h" />
+		<Unit filename="include_irr\ISceneManager.h" />
+		<Unit filename="include_irr\ISceneNode.h" />
+		<Unit filename="include_irr\ISceneNodeAnimator.h" />
+		<Unit filename="include_irr\ISceneNodeAnimatorCameraFPS.h" />
+		<Unit filename="include_irr\ISceneNodeAnimatorCameraMaya.h" />
+		<Unit filename="include_irr\ISceneNodeAnimatorCollisionResponse.h" />
+		<Unit filename="include_irr\ISceneNodeAnimatorFactory.h" />
+		<Unit filename="include_irr\ISceneNodeFactory.h" />
+		<Unit filename="include_irr\ISceneUserDataSerializer.h" />
+		<Unit filename="include_irr\IShaderConstantSetCallBack.h" />
+		<Unit filename="include_irr\IShadowVolumeSceneNode.h" />
+		<Unit filename="include_irr\ISkinnedMesh.h" />
+		<Unit filename="include_irr\ITerrainSceneNode.h" />
+		<Unit filename="include_irr\ITextSceneNode.h" />
+		<Unit filename="include_irr\ITexture.h" />
+		<Unit filename="include_irr\ITimer.h" />
+		<Unit filename="include_irr\ITriangleSelector.h" />
+		<Unit filename="include_irr\IVertexBuffer.h" />
+		<Unit filename="include_irr\IVideoDriver.h" />
+		<Unit filename="include_irr\IVideoModeList.h" />
+		<Unit filename="include_irr\IVolumeLightSceneNode.h" />
+		<Unit filename="include_irr\IWriteFile.h" />
+		<Unit filename="include_irr\IXMLReader.h" />
+		<Unit filename="include_irr\IXMLWriter.h" />
+		<Unit filename="include_irr\IrrCompileConfig.h" />
+		<Unit filename="include_irr\IrrlichtDevice.h" />
+		<Unit filename="include_irr\Keycodes.h" />
+		<Unit filename="include_irr\S3DVertex.h" />
+		<Unit filename="include_irr\SAnimatedMesh.h" />
+		<Unit filename="include_irr\SColor.h" />
+		<Unit filename="include_irr\SExposedVideoData.h" />
+		<Unit filename="include_irr\SIrrCreationParameters.h" />
+		<Unit filename="include_irr\SKeyMap.h" />
+		<Unit filename="include_irr\SLight.h" />
+		<Unit filename="include_irr\SMaterial.h" />
+		<Unit filename="include_irr\SMaterialLayer.h" />
+		<Unit filename="include_irr\SMesh.h" />
+		<Unit filename="include_irr\SMeshBuffer.h" />
+		<Unit filename="include_irr\SMeshBufferLightMap.h" />
+		<Unit filename="include_irr\SMeshBufferTangents.h" />
+		<Unit filename="include_irr\SParticle.h" />
+		<Unit filename="include_irr\SSharedMeshBuffer.h" />
+		<Unit filename="include_irr\SSkinMeshBuffer.h" />
+		<Unit filename="include_irr\SVertexIndex.h" />
+		<Unit filename="include_irr\SVertexManipulator.h" />
+		<Unit filename="include_irr\SViewFrustum.h" />
+		<Unit filename="include_irr\SceneParameters.h" />
+		<Unit filename="include_irr\aabbox3d.h" />
+		<Unit filename="include_irr\coreutil.h" />
+		<Unit filename="include_irr\dimension2d.h" />
+		<Unit filename="include_irr\driverChoice.h" />
+		<Unit filename="include_irr\fast_atof.h" />
+		<Unit filename="include_irr\heapsort.h" />
+		<Unit filename="include_irr\irrAllocator.h" />
+		<Unit filename="include_irr\irrArray.h" />
+		<Unit filename="include_irr\irrList.h" />
+		<Unit filename="include_irr\irrMap.h" />
+		<Unit filename="include_irr\irrMath.h" />
+		<Unit filename="include_irr\irrString.h" />
+		<Unit filename="include_irr\irrTypes.h" />
+		<Unit filename="include_irr\irrXML.h" />
+		<Unit filename="include_irr\irrlicht.h" />
+		<Unit filename="include_irr\line2d.h" />
+		<Unit filename="include_irr\line3d.h" />
+		<Unit filename="include_irr\matrix4.h" />
+		<Unit filename="include_irr\path.h" />
+		<Unit filename="include_irr\plane3d.h" />
+		<Unit filename="include_irr\position2d.h" />
+		<Unit filename="include_irr\quaternion.h" />
+		<Unit filename="include_irr\rect.h" />
+		<Unit filename="include_irr\triangle3d.h" />
+		<Unit filename="include_irr\vector2d.h" />
+		<Unit filename="include_irr\vector3d.h" />
+		<Unit filename="peakwriter\peakwriter.cpp" />
+		<Unit filename="peakwriter\reader_wav.cpp" />
+		<Unit filename="peakwriter\reader_wav.h" />
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\aeffect.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\aeffectx.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\pluginterfaces\vst2.x\vstfxstore.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\aeffeditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffect.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffect.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffectx.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\audioeffectx.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vst\public.sdk\source\vst2.x\vstplugmain.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\Changelog">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\aeffguieditor.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\aeffguieditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cdatabrowser.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cdatabrowser.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cfileselector.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cfileselector.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cscrollview.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cscrollview.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctabview.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctabview.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctooltipsupport.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\ctooltipsupport.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cvstguitimer.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\cvstguitimer.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\plugguieditor.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\plugguieditor.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstcontrols.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstcontrols.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstgui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstgui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstguidebug.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstguidebug.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sdk_vstgui\vstkeycode.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120.def">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120_gui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\c120_gui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_c120\params_vst_c120.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60.def">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60_gui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\glz60_gui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_glz60\params_glz60.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk.def">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk_gui.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\jyk_gui.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vst_jykkr\params_vst_jyk.h" />
+		<Unit filename="vsti_drummer\drummer.cpp" />
+		<Unit filename="vsti_drummer\drummer.def" />
+		<Unit filename="vsti_drummer\drummer.h" />
+		<Unit filename="vsti_drummer\params.h" />
+		<Unit filename="vsti_guitarist\guitarist.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vsti_guitarist\guitarist.def">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vsti_guitarist\guitarist.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="vsti_guitarist\params.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

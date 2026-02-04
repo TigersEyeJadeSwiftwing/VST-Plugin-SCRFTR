@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win-VST-w32" />
+	<File name="common\plugin_jykkr.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="7449" topLine="117" />
+	</File>
+	<File name="common\eq\tonestack_h.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="2001" topLine="24" />
+	</File>
+	<File name="common\synth\drums\drum_snare.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="470" topLine="0" />
+	</File>
+	<File name="common\plugin_glz60.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="19" />
+	</File>
+	<File name="common\eq\tstack_wav_j.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="653" topLine="0" />
+	</File>
+	<File name="peakwriter\reader_wav.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="507" topLine="0" />
+	</File>
+	<File name="common\dist\tube_bank_j.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3355" topLine="76" />
+	</File>
+	<File name="common\plugin_c120.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="6334" topLine="205" />
+	</File>
+	<File name="include\lib_c120.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="859" topLine="7" />
+	</File>
+	<File name="common\eq\tstack_params.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="701" topLine="0" />
+	</File>
+	<File name="common\dist\tube_bank_h.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="2382" topLine="79" />
+	</File>
+	<File name="common\plugin\defines_c120.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3182" topLine="37" />
+	</File>
+	<File name="vst_c120\c120.rc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="988" topLine="0" />
+	</File>
+	<File name="common\custdata_types.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="307" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_j.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="15" topLine="0" />
+	</File>
+	<File name="common\dist\tube_bank_f.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1775" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_f.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\sample_bank_custom_b.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="278" topLine="3" />
+	</File>
+	<File name="common\eq\impulse_eq.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3599" topLine="81" />
+	</File>
+	<File name="common\plugin_jykkr.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="6658" topLine="0" />
+	</File>
+	<File name="vst_jykkr\jyk.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="291" topLine="43" />
+	</File>
+	<File name="common\eq\tonestack_h.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="576" topLine="0" />
+	</File>
+	<File name="common\eq\csts_eq.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="6485" topLine="164" />
+	</File>
+	<File name="common\synth\drumset_snare.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="2147" topLine="46" />
+	</File>
+	<File name="common\plugin_glz60.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="8089" topLine="93" />
+	</File>
+	<File name="common\eq\tstack_wavs.h" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="sdk_vst\pluginterfaces\vst2.x\aeffect.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="301" />
+	</File>
+	<File name="common\dist\tube_params.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="542" topLine="0" />
+	</File>
+	<File name="common\plugin_c120.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1190" topLine="0" />
+	</File>
+	<File name="include\scorchcraft.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="535" topLine="0" />
+	</File>
+	<File name="common\eq\tstack_wav_c.h" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\impulse\cabmic_a.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="140" />
+	</File>
+	<File name="common\dist\tube_bank_i.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="5331" topLine="165" />
+	</File>
+	<File name="common\plugin\defines_jykkr.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3504" topLine="23" />
+	</File>
+	<File name="vst_c120\c120_gui.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\controller\controller_c120.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="726" topLine="0" />
+	</File>
+	<File name="common\un\un_vst_jykkr.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="322" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_j.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1521" topLine="7" />
+	</File>
+	<File name="common\dist\tube_bank_g.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="14889" topLine="453" />
+	</File>
+	<File name="vsti_guitarist\guitarist.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="486" />
+	</File>
+	<File name="vst_c120\c120.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1142" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_g.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="661" topLine="0" />
+	</File>
+	<File name="vsti_drummer\drummer.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="6005" topLine="50" />
+	</File>
+	<File name="common\eq\impulse_eq.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="232" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_c.h" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\sample_bank_custom.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="2027" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_i.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="7746" topLine="324" />
+	</File>
+	<File name="sdk_vst\public.sdk\source\vst2.x\audioeffect.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1624" topLine="0" />
+	</File>
+	<File name="common\eq\csts_eq.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="116" topLine="0" />
+	</File>
+	<File name="common\synth\drumset_snare.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1992" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_aa.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="34" topLine="0" />
+	</File>
+	<File name="common\plugin_guitarist.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="6440" topLine="202" />
+	</File>
+	<File name="sdk_vst\pluginterfaces\vst2.x\aeffectx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="1093" />
+	</File>
+	<File name="common\plugin_drummer.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1066" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_e.cpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="26956" topLine="800" />
+	</File>
+	<File name="common\eq\tstack_wav_e.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="337" topLine="0" />
+	</File>
+	<File name="common\impulse\cabmic_a.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="68" topLine="0" />
+	</File>
+	<File name="peakwriter\peakwriter.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1406" topLine="78" />
+	</File>
+	<File name="common\dist\tube_bank_i.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="343" topLine="82" />
+	</File>
+	<File name="common\plugin\eq_cabs_guitar_a.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1306" topLine="0" />
+	</File>
+	<File name="vst_c120\c120_gui.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="263" topLine="0" />
+	</File>
+	<File name="common\controller\controller_c120.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="5137" topLine="0" />
+	</File>
+	<File name="common\un\un_vsti_drummer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="257" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_k.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="11010" topLine="367" />
+	</File>
+	<File name="common\dist\tube_bank_g.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="271" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_cab_c120_e.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\irr_win\c120_irrgui.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="125" />
+	</File>
+	<File name="vsti_drummer\drummer.def" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="62" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_cab_c120_aa.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="56" topLine="0" />
+	</File>
+	<File name="common\eq\lp_btw.cpp" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="14" topLine="0" />
+	</File>
+	<File name="common\sample_bank_custom.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="691" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_i.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3317" topLine="40" />
+	</File>
+	<File name="common\eq\fir_eq.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="12208" topLine="478" />
+	</File>
+	<File name="common\synth\gtr_string.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="4433" topLine="115" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_ab.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="34" topLine="0" />
+	</File>
+	<File name="common\plugin_guitarist.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1935" topLine="4" />
+	</File>
+	<File name="vst_jykkr\jyk.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="5956" topLine="115" />
+	</File>
+	<File name="common\plugin_drummer.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="8498" topLine="114" />
+	</File>
+	<File name="Makefile" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="27324" topLine="636" />
+	</File>
+	<File name="common\eq\tonestack_e.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1750" topLine="0" />
+	</File>
+	<File name="common\eq\tstack_wav_i.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1165" topLine="25" />
+	</File>
+	<File name="common\impulse\imp_wavs_a.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="697" topLine="0" />
+	</File>
+	<File name="peakwriter\reader_wav.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1150" topLine="24" />
+	</File>
+	<File name="common\dist\tube_bank_j.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="18407" topLine="555" />
+	</File>
+	<File name="common\plugin\tone_c120.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="3525" topLine="0" />
+	</File>
+	<File name="vst_c120\params_vst_c120.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="101" topLine="0" />
+	</File>
+	<File name="common\eq\tonestack_k.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1425" topLine="44" />
+	</File>
+	<File name="common\dist\tube_bank_h.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="18253" topLine="46" />
+	</File>
+	<File name="common\plugin\backup_eq_tones.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="1539" topLine="0" />
+	</File>
+	<File name="vst_c120\c120.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="469" topLine="0" />
+	</File>
+	<File name="common\custdata_types.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="22843" topLine="241" />
+	</File>
+	<File name="common\un\un_vst_c120.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="463" topLine="0" />
+	</File>
+	<File name="common\sc_parameters.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="2073" topLine="0" />
+	</File>
+	<File name="common\dist\tube_bank_f.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="8455" topLine="487" />
+	</File>
+	<File name="vsti_drummer\drummer.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="284" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_cab_c120_b.h" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\eq\lp_btw.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="0" topLine="0" />
+	</File>
+	<File name="common\sample_bank_custom_b.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="4307" topLine="0" />
+	</File>
+	<File name="vst_jykkr\jyk_gui.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="237" topLine="0" />
+	</File>
+	<File name="sdk_vst\public.sdk\source\vst2.x\audioeffectx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="674" topLine="202" />
+	</File>
+	<File name="common\eq\fir_eq.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="630" topLine="0" />
+	</File>
+	<File name="common\eq\wavs_amp\wav_head_c120_ac.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor1 position="31" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

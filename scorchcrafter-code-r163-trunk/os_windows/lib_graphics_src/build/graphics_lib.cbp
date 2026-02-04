@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="graphics_lib" />
+		<Option pch_mode="2" />
+		<Option compiler="tdm_mingw64" />
+		<Build>
+			<Target title="MinGW-32">
+				<Option output="..\..\lib\libgraphics_32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="mingww32" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DZ_PREFIX" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="MinGW-64">
+				<Option output="..\..\lib\libgraphics_64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="mingww64" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN64" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DZ_PREFIX" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O2" />
+			<Add option="-w" />
+			<Add option="-trigraphs" />
+			<Add option="-m128bit-long-double" />
+			<Add option="-ffinite-math-only" />
+			<Add option="-fno-signed-zeros" />
+			<Add option="-fno-trapping-math" />
+			<Add option="-ffast-math" />
+			<Add option="-malign-double" />
+			<Add option="-DNDEBUG" />
+			<Add directory="..\..\lib_graphics_src" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="..\..\lib_graphics_src" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-trigraphs" />
+			<Add option="-m128bit-long-double" />
+			<Add option="-ffinite-math-only" />
+			<Add option="-fno-signed-zeros" />
+			<Add option="-fno-trapping-math" />
+			<Add option="-ffast-math" />
+			<Add option="-malign-double" />
+			<Add library="uuid" />
+			<Add library="shell32" />
+			<Add library="ole32" />
+			<Add library="User32" />
+			<Add library="advapi32" />
+			<Add directory="..\..\lib_graphics_src" />
+		</Linker>
+		<Unit filename="..\adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\crc32.h" />
+		<Unit filename="..\deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\deflate.h" />
+		<Unit filename="..\gzclose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\gzguts.h" />
+		<Unit filename="..\gzlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\gzread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\gzwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\infback.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\inffast.h" />
+		<Unit filename="..\inffixed.h" />
+		<Unit filename="..\inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\inflate.h" />
+		<Unit filename="..\inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\inftrees.h" />
+		<Unit filename="..\minigzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\png.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\png.h" />
+		<Unit filename="..\pngconf.h" />
+		<Unit filename="..\pngerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngget.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngpread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngpriv.h" />
+		<Unit filename="..\pngread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngrio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngrtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngrutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngtest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngtrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngwio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngwtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\pngwutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\trees.h" />
+		<Unit filename="..\uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\zconf.h" />
+		<Unit filename="..\zlib.h" />
+		<Unit filename="..\zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\zutil.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

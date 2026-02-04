@@ -1,0 +1,3 @@
+LIBRARY ScGuitarist
+EXPORTS main=VSTPluginMain
+VSTPluginMain

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Shapewriter" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 MinGW">
+				<Option output="..\bin\Shapewriter_MinGW" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="3" />
+				<Option compiler="mingww32" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-w" />
+					<Add option="-trigraphs" />
+					<Add option="-m128bit-long-double" />
+					<Add option="-msse4.2" />
+					<Add option="-ffinite-math-only" />
+					<Add option="-fno-signed-zeros" />
+					<Add option="-fno-trapping-math" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-malign-double" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW32" />
+					<Add option="-D_MINGW32_" />
+					<Add option="-D__MINGW32__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add option="--def shapewriter.def" />
+					<Add option="-trigraphs" />
+					<Add option="-m128bit-long-double" />
+					<Add option="-msse4.2" />
+					<Add option="-ffinite-math-only" />
+					<Add option="-fno-signed-zeros" />
+					<Add option="-fno-trapping-math" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-malign-double" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+				</Linker>
+			</Target>
+			<Target title="Win64 MinGW">
+				<Option output="..\bin\Shapewriter_MinGW" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="3" />
+				<Option compiler="mingww64" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-O1" />
+					<Add option="-w" />
+					<Add option="-trigraphs" />
+					<Add option="-m128bit-long-double" />
+					<Add option="-msse4.2" />
+					<Add option="-m64" />
+					<Add option="-ffinite-math-only" />
+					<Add option="-fno-signed-zeros" />
+					<Add option="-fno-trapping-math" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-malign-double" />
+					<Add option="-DWINDOWS" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWIN64" />
+					<Add option="-D_USERDLL" />
+					<Add option="-D_USE_MATH_DEFINES" />
+					<Add option="-DCOMPILER_MGW" />
+					<Add option="-DUSE_LIBPNG=1" />
+					<Add option="-DCRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS=1" />
+					<Add option="-DCRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE=1" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DEXPORTS" />
+					<Add option="-DPNG_NO_MNG_FEATURES" />
+					<Add option="-DPNG_STATIC" />
+					<Add option="-DMINGW64" />
+					<Add option="-D_MINGW64_" />
+					<Add option="-D__MINGW64__" />
+					<Add option="-DGNUC" />
+					<Add option="-D_GNUC_" />
+					<Add option="-DPRECISION_MAX" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add option="--def shapewriter.def" />
+					<Add option="-trigraphs" />
+					<Add option="-m128bit-long-double" />
+					<Add option="-msse4.2" />
+					<Add option="-m64" />
+					<Add option="-ffinite-math-only" />
+					<Add option="-fno-signed-zeros" />
+					<Add option="-fno-trapping-math" />
+					<Add option="-mfpmath=sse" />
+					<Add option="-malign-double" />
+					<Add library="uuid" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="User32" />
+					<Add library="advapi32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="..\vstsdk" />
+			<Add directory="..\vstgui" />
+			<Add directory="..\vst_shapewriter" />
+			<Add directory="..\lib_include" />
+			<Add directory="..\vstsdk\pluginterfaces\vst2.x" />
+			<Add directory="..\vstsdk\public.sdk\source\vst2.x" />
+			<Add directory="..\shared" />
+		</Compiler>
+		<Unit filename="..\common\custdata_types.cpp" />
+		<Unit filename="..\common\custdata_types.h" />
+		<Unit filename="params.h" />
+		<Unit filename="shapewriter.cpp" />
+		<Unit filename="shapewriter.def" />
+		<Unit filename="shapewriter.h" />
+		<Unit filename="shapewriter.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\aeffect.h" />
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\aeffectx.h" />
+		<Unit filename="..\vstsdk\pluginterfaces\vst2.x\vstfxstore.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\aeffeditor.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffect.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.h" />
+		<Unit filename="..\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

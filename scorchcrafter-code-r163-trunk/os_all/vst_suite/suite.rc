@@ -1,0 +1,69 @@
+#define APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+PI_GuiBG						PNG  DISCARDABLE		"../graphics/suite_bg.png"
+PI_GuiBGpn						PNG  DISCARDABLE		"../graphics/suite_panel_bg.png"
+PItxCatMenu						PNG  DISCARDABLE		"../graphics/suite_textmenu_cat.png"
+PItxCatList						PNG  DISCARDABLE		"../graphics/suite_txmenu_vertical_catagory.png"
+PItxCmpList						PNG  DISCARDABLE		"../graphics/suite_txmenu_vertical_full_list.png"
+
+PIslotCtrl						PNG  DISCARDABLE		"../graphics/suite_slot_ctrl_panel.png"
+
+PIknob_nt1						PNG  DISCARDABLE		"../graphics/knob_notches1_50x50.png"
+PIknob_nt1Big					PNG  DISCARDABLE		"../graphics/knob_notches1_64x64.png"
+PIknob_m1						PNG  DISCARDABLE		"../graphics/suite_knob1_50x50.png"
+PIknob_m2Big					PNG  DISCARDABLE		"../graphics/suite_knob1_64x64.png"
+
+PImBG_00						PNG  DISCARDABLE		"../graphics/suite_slot_0.png"
+PImBG_01						PNG  DISCARDABLE		"../graphics/suite_slot_1.png"
+PImBG_02						PNG  DISCARDABLE		"../graphics/suite_slot_2.png"
+PImBG_03						PNG  DISCARDABLE		"../graphics/suite_slot_3.png"
+PImBG_04						PNG  DISCARDABLE		"../graphics/suite_slot_4.png"
+PImBG_05						PNG  DISCARDABLE		"../graphics/suite_slot_5.png"
+PImBG_06						PNG  DISCARDABLE		"../graphics/suite_slot_6.png"
+PImBG_07						PNG  DISCARDABLE		"../graphics/suite_slot_7.png"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION    1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+FILEOS 0x4L
+FILETYPE 0x2L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004e4"
+        BEGIN
+			VALUE "CompanyName", "ScorchCrafter\0"
+			VALUE "FileDescription", "SC VST Guitar FX Suite\0"
+			VALUE "FileVersion", "1.0.0"
+			VALUE "InternalName", "Suite"
+			VALUE "LegalCopyright", "ScorchCrafter\0"
+			VALUE "OriginalFilename", "Suite"
+			VALUE "ProductName", "Suite"
+			VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1252
+    END
+END
+
+#endif    // !_MAC

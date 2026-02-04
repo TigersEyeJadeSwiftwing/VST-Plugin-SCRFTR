@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win64-HD MinGW" />
+	<File name="..\shared\custdata_types.h" open="0" top="0" tabpos="1">
+		<Cursor position="422" topLine="0" />
+	</File>
+	<File name="..\shared\w_dat_dn.h" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="457" />
+	</File>
+	<File name="..\shared\w_dat_up.h" open="0" top="0" tabpos="3">
+		<Cursor position="173" topLine="457" />
+	</File>
+	<File name="params.h" open="0" top="0" tabpos="1">
+		<Cursor position="342" topLine="0" />
+	</File>
+	<File name="scorchc.rc" open="0" top="0" tabpos="6">
+		<Cursor position="1374" topLine="0" />
+	</File>
+	<File name="scorchc_gui.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="5711" topLine="0" />
+	</File>
+	<File name="scorchc_gui.h" open="0" top="0" tabpos="7">
+		<Cursor position="213" topLine="0" />
+	</File>
+	<File name="scr_amp_head.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1668" topLine="351" />
+	</File>
+	<File name="scr_amp_head.h" open="0" top="0" tabpos="2">
+		<Cursor position="410" topLine="0" />
+	</File>
+	<File name="..\vstgui\aeffguieditor.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="4530" topLine="104" />
+	</File>
+	<File name="..\vstgui\aeffguieditor.h" open="0" top="0" tabpos="2">
+		<Cursor position="2608" topLine="61" />
+	</File>
+	<File name="..\vstgui\plugguieditor.h" open="0" top="0" tabpos="0">
+		<Cursor position="3746" topLine="53" />
+	</File>
+	<File name="..\vstgui\vstgui.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="133767" topLine="4894" />
+	</File>
+	<File name="..\vstgui\vstgui.h" open="0" top="0" tabpos="2">
+		<Cursor position="3822" topLine="83" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\aeffect.h" open="0" top="0" tabpos="0">
+		<Cursor position="16243" topLine="290" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\aeffectx.h" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\vstsdk\pluginterfaces\vst2.x\vstfxstore.h" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\aeffeditor.h" open="0" top="0" tabpos="2">
+		<Cursor position="1414" topLine="0" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="10236" topLine="233" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffect.h" open="0" top="0" tabpos="2">
+		<Cursor position="7544" topLine="83" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="33680" topLine="894" />
+	</File>
+	<File name="..\vstsdk\public.sdk\source\vst2.x\audioeffectx.h" open="0" top="0" tabpos="0">
+		<Cursor position="11338" topLine="148" />
+	</File>
+</CodeBlocks_layout_file>

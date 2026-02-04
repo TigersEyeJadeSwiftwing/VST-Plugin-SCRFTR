@@ -1,0 +1,5 @@
+#include "../../sdk_vst/pluginterfaces/vst2.x/aeffect.h"
+#include "../../sdk_vst/public.sdk/source/vst2.x/audioeffect.cpp"
+#include "../../sdk_vst/pluginterfaces/vst2.x/aeffectx.h"
+#include "../../sdk_vst/public.sdk/source/vst2.x/audioeffectx.cpp"
+#include "../../sdk_vst/public.sdk/source/vst2.x/vstplugmain.cpp"

@@ -1,0 +1,3 @@
+LIBRARY GLZ60
+EXPORTS main=VSTPluginMain
+VSTPluginMain
